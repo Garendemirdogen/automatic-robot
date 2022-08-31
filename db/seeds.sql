@@ -1,2 +1,25 @@
 USE employee_db
 
+INSERT INTO department(id, name)
+VALUES
+(1,"HUMAN RESOURCES"),
+(2,"SALES"),
+(3,"ENGINEERING"),
+(4,"FINANCE"),
+(5,"LEGAL");
+
+INSERT INTO role(id,title,salary,department_id)
+VALUES
+(1,"HUMAN RESOURCES",75000,1),
+(2,"SALES PERSON",120000,2),
+(3,"SOFTWARE ENGINEER",185000,3),
+(4,"ACCOUNTANT",150000,4),
+(5,"LAWYER",275000,5),
+(6,"SENIOR SOFTWARE ENGINEER",250000,3),
+(7,"BOOK KEEPER",90000,4),
+(8,"TRAVELING SALES PERSON",160000,2);
+
+INSERT INTO employee(first_name, last_name, role_id, manager_id)
+VALUES
+(1),
+(2),
